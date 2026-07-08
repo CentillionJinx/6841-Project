@@ -1,0 +1,48 @@
+# PRISM System Auditing Rules
+# Project PRISM — Purple-Red Intelligence & Surveillance Monitor
+# Author: Gururam Subramanian (z5636559) — COMP6841 Security Engineering
+# Remove any existing rules first
+-D
+
+# Buffer Size — large enough for high-volume runs
+-b 8192
+
+# ========================================================
+# MITRE T1036.003: Rename System Utilities
+# Detects execve() called from writable temp directories.
+# Key: exe path is in /tmp, /dev/shm, or /var/tmp — not a
+# legitimate install location for system binaries.
+# ========================================================
+-a always,exit -F arch=b64 -S execve -F dir=/tmp     -k prism_t1036_exec_tmp
+-a always,exit -F arch=b64 -S execve -F dir=/dev/shm -k prism_t1036_exec_shmem
+-a always,exit -F arch=b64 -S execve -F dir=/var/tmp -k prism_t1036_exec_vartmp
+
+# ========================================================
+# MITRE T1036.005: Match Legitimate Name or Location
+# Detects prctl(PR_SET_NAME) calls — the syscall used to
+# rename a process thread to mimic kernel worker names.
+# syscall 158, option a0=0xf (15 = PR_SET_NAME).
+# ========================================================
+-a always,exit -F arch=b64 -S prctl -k prism_t1036_prctl
+
+# ========================================================
+# MITRE T1003.007: /proc Filesystem Memory Access
+# Hooks open() and openat() on anything under /proc.
+# Correlator narrows to /proc/[pid]/mem and /proc/[pid]/maps.
+# ========================================================
+-a always,exit -F arch=b64 -S open,openat -F dir=/proc -k prism_t1003_proc_open
+
+# ========================================================
+# MITRE T1003: ptrace-based Memory Access
+# Alternative credential dump vector via ptrace().
+# Higher FP risk (debuggers); correlated separately.
+# ========================================================
+-a always,exit -F arch=b64 -S ptrace -k prism_t1003_ptrace
+
+# ========================================================
+# MITRE T1003: Shadow File Access
+# Watches reads and writes to /etc/shadow and /etc/gshadow.
+# Any non-whitelisted binary opening these files is CRITICAL.
+# ========================================================
+-w /etc/shadow  -p rwa -k prism_t1003_shadow
+-w /etc/gshadow -p rwa -k prism_t1003_gshadow
