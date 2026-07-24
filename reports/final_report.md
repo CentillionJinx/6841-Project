@@ -148,6 +148,37 @@ The closed-loop validation run executed on 1 July 2026 in the isolated lab VM pr
 3. **T1003.007** — `proc_mem_scan.py` reading the dummy target's heap through `/proc/223290/mem` → detected via `detect_t1003_credential_dumping`, alert title *"Unauthorized /proc memory access,"* with the planted secret confirmed extracted.
 4. **T1003 (shadow)** — `shadow_access.sh` reading `/etc/shadow` from a non-whitelisted `bash` process → detected via the same function, alert title *"Unauthorized shadow file access."*
 
+The following sample JSON objects are representative of each alert type as written to `logs/parsed/detections.json` by `alerter.py`:
+
+```json
+[
+  {
+    "rule": "T1036.005-Masquerade",
+    "severity": "HIGH",
+    "description": "Process in temp directory claimed legitimate system name: exe=/tmp/systemd-helper | comm=systemd-helper",
+    "audit_id": "5492"
+  },
+  {
+    "rule": "T1036.005-Masquerade-Prctl",
+    "severity": "HIGH",
+    "description": "Process explicitly renamed to system thread via prctl: exe=/tmp/prism_prctl_spoof | comm=kworker/u4:2",
+    "audit_id": "5501"
+  },
+  {
+    "rule": "T1003.007-CredentialDump",
+    "severity": "CRITICAL",
+    "description": "Unauthorized /proc memory access: exe=/usr/bin/python3 | target=/proc/223290/mem",
+    "audit_id": "6001"
+  },
+  {
+    "rule": "T1003-ShadowAccess",
+    "severity": "CRITICAL",
+    "description": "Unauthorized shadow file access: exe=/usr/bin/bash | target=/etc/shadow",
+    "audit_id": "5900"
+  }
+]
+```
+
 A fifth row in the matrix (execution from `/dev/shm` rather than `/tmp`) is covered by the same rule and correlator branch as row 1 but was not separately exercised in the live run; it is recorded as covered by construction rather than by direct test evidence, and this distinction is preserved honestly in the matrix rather than conflated with the four directly observed detections.
 
 Across the full run, the engine emitted 112 raw alerts in total, of which only 4 were true positives matching the intended simulation. The remaining 108 were the `/proc/self/maps` false-positive cluster described in Section 5.3, generated primarily by the Python interpreter running `proc_mem_scan.py` itself inspecting its own memory layout as an ordinary part of interpreter operation. This is reported as a finding, not hidden as noise: it demonstrates concretely why a `/proc`-open-based detection rule is unusable in production without a self-read exclusion, and it is the single clearest piece of evidence in the whole project that naive kernel telemetry still needs behavioural tuning before it becomes an actionable alert stream.
