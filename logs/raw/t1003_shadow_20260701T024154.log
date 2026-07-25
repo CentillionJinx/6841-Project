@@ -1,0 +1,6 @@
+[T1003] Shadow file access simulation — Wed Jul  1 02:41:54 AEST 2026
+[T1003] Attempting to open /etc/shadow...
+[T1003] SUCCESS: /etc/shadow is readable. Audit event generated.
+[T1003] Real attack would extract hashes for offline cracking.
+[T1003] PRISM only confirms access — no content is captured.
+[T1003] Simulation complete.

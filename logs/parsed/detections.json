@@ -1,0 +1,674 @@
+[
+    {
+        "rule": "T1036.005-Masquerade-Prctl",
+        "severity": "HIGH",
+        "description": "Process explicitly renamed to system thread: exe=/usr/bin/systemd-tty-ask-password-agent | comm=systemd-tty-ask",
+        "audit_id": "2717"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "2743"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "2754"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "2761"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/cmp | target=/proc/self/maps",
+        "audit_id": "2765"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3070"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3076"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "3095"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3104"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3116"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3130"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3138"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3150"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3168"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3180"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3197"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3205"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "3208"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "3215"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3497"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3503"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "3522"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3533"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3545"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3557"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3571"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3580"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3592"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3605"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3620"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3635"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3644"
+    },
+    {
+        "rule": "T1036.005-Masquerade-Prctl",
+        "severity": "HIGH",
+        "description": "Process explicitly renamed to system thread: exe=/usr/lib/systemd/systemd-userwork | comm=systemd-userwor",
+        "audit_id": "3653"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3656"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3696"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3709"
+    },
+    {
+        "rule": "T1036.005-Masquerade-Prctl",
+        "severity": "HIGH",
+        "description": "Process explicitly renamed to system thread: exe=/usr/lib/systemd/systemd-userwork | comm=systemd-userwor",
+        "audit_id": "3724"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3728"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3737"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3754"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3768"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3776"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3792"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3800"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3812"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3826"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3838"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3850"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3858"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "3870"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "3891"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "3893"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3911"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3971"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "3975"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4069"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4072"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4077"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4080"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4083"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4086"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/diff | target=/proc/self/maps",
+        "audit_id": "4203"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4606"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4612"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "4633"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "4640"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "4659"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "4661"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4679"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "4727"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4753"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4757"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4850"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4853"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4858"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4861"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4864"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "4867"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/diff | target=/proc/self/maps",
+        "audit_id": "4984"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "5384"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "5390"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "5407"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "5414"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "5425"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "5435"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/sudo | target=/proc/self/maps",
+        "audit_id": "5446"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/python3.13 | target=/proc/meminfo",
+        "audit_id": "5454"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/python3.13 | target=/proc/self/maps",
+        "audit_id": "5458"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/sbin/unix_chkpwd | target=/etc/shadow",
+        "audit_id": "5463"
+    },
+    {
+        "rule": "T1036.005-Masquerade",
+        "severity": "HIGH",
+        "description": "Process in /tmp claimed legitimate system name: exe=/tmp/systemd-helper | comm=systemd-helper",
+        "audit_id": "5492"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "5505"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "5517"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "5532"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "5548"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "5570"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "7431"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/head | target=/etc/shadow",
+        "audit_id": "7442"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "7458"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/python3.13 | target=/proc/223290/maps",
+        "audit_id": "7908"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/python3.13 | target=/proc/223290/mem",
+        "audit_id": "7909"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "7921"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "8214"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "8220"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "8239"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "8244"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "8260"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/grep | target=/proc/self/maps",
+        "audit_id": "8268"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/lib/systemd/systemd-executor | target=/proc/pressure/memory",
+        "audit_id": "8280"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "8285"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/home/quintessential/.atuin/bin/atuin | target=/proc/self/maps",
+        "audit_id": "8292"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/sbin/unix_chkpwd | target=/etc/shadow",
+        "audit_id": "8306"
+    },
+    {
+        "rule": "T1003.007-CredentialDump",
+        "severity": "CRITICAL",
+        "description": "Unauthorized memory/shadow access: exe=/usr/bin/sudo | target=/proc/self/maps",
+        "audit_id": "8309"
+    }
+]

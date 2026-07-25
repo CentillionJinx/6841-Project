@@ -1,0 +1,27 @@
+========================================
+[T1003] PRISM Red Team — Credential Dumping Simulation
+[T1003] Start time: Wed Jul  1 02:41:52 AEST 2026
+========================================
+[T1003] Audit log line count before: 14105
+[T1003] Running shadow_access.sh...
+[T1003] Shadow file access simulation — Wed Jul  1 02:41:54 AEST 2026
+[T1003] Attempting to open /etc/shadow...
+[T1003] SUCCESS: /etc/shadow is readable. Audit event generated.
+[T1003] Real attack would extract hashes for offline cracking.
+[T1003] PRISM only confirms access — no content is captured.
+[T1003] Simulation complete.
+[T1003] Running proc_mem_scan.py...
+--- PRISM T1003.007 Memory Scanner Started at 20260701T024156 ---
+[T1003] Found target 'dummy_cred_holder.sh' at PID 223290
+[T1003] Phase 1: Parsing memory maps (/proc/223290/maps)...
+[T1003] Phase 2: Scanning virtual memory (/proc/223290/mem)...
+[T1003] SUCCESS: Found simulated credential in '[heap]' region (0x55f71ed91000)
+[T1003] Extracted: password=DUMMY_LAB_SECRET_PRISM_2024
+[T1003] SUCCESS: Found simulated credential in '[heap]' region (0x55f71ed91000)
+[T1003] Extracted: password=DUMMY_LAB_SECRET_PRISM_2024
+--- PRISM T1003.007 Memory Scanner Finished ---
+[T1003] Capturing 9414 new audit events...
+[T1003] Audit delta saved to: /home/quintessential/Documents/6841/ass1/project-prism/red/t1003_cred_dump/../../logs/raw/t1003_audit_delta_20260701T024152.log
+========================================
+[T1003] Simulation complete. End time: Wed Jul  1 02:41:58 AEST 2026
+========================================

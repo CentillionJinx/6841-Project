@@ -1,3 +1,5 @@
 logs/
 *.pyc
 __pycache__/
+red/t1036_masquerade/prctl_spoof
+.venv/

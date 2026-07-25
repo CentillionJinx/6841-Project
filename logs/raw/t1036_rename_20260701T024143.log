@@ -1,0 +1,9 @@
+[T1036.003] Starting rename_exec simulation at 20260701T024143
+[T1036.003] Copying /bin/sleep to /tmp/systemd-helper
+[T1036.003] Executing masqueraded binary (sleep 5) as systemd-helper
+[T1036.003] Masqueraded process PID: 224813
+[T1036.003] Check: /proc/224813/exe should point to /tmp/systemd-helper
+lrwxrwxrwx 1 root root 0 Jul  1 02:41 /proc/224813/exe -> /tmp/systemd-helper
+systemd-helper
+[T1036.003] Cleaning up /tmp/systemd-helper
+[T1036.003] Simulation complete. Log: /home/quintessential/Documents/6841/ass1/project-prism/red/t1036_masquerade/../../logs/raw/t1036_rename_20260701T024143.log

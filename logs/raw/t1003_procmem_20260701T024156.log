@@ -1,0 +1,9 @@
+--- PRISM T1003.007 Memory Scanner Started at 20260701T024156 ---
+[T1003] Found target 'dummy_cred_holder.sh' at PID 223290
+[T1003] Phase 1: Parsing memory maps (/proc/223290/maps)...
+[T1003] Phase 2: Scanning virtual memory (/proc/223290/mem)...
+[T1003] SUCCESS: Found simulated credential in '[heap]' region (0x55f71ed91000)
+[T1003] Extracted: password=DUMMY_LAB_SECRET_PRISM_2024
+[T1003] SUCCESS: Found simulated credential in '[heap]' region (0x55f71ed91000)
+[T1003] Extracted: password=DUMMY_LAB_SECRET_PRISM_2024
+--- PRISM T1003.007 Memory Scanner Finished ---

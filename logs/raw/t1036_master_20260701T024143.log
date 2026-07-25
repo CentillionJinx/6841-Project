@@ -1,0 +1,22 @@
+========================================
+[T1036] PRISM Red Team — Process Masquerading Simulation
+[T1036] Start time: Wed Jul  1 02:41:43 AEST 2026
+========================================
+[T1036] Audit log line count before: 13468
+[T1036] Running rename_exec.sh...
+[T1036.003] Starting rename_exec simulation at 20260701T024143
+[T1036.003] Copying /bin/sleep to /tmp/systemd-helper
+[T1036.003] Executing masqueraded binary (sleep 5) as systemd-helper
+[T1036.003] Masqueraded process PID: 224813
+[T1036.003] Check: /proc/224813/exe should point to /tmp/systemd-helper
+lrwxrwxrwx 1 root root 0 Jul  1 02:41 /proc/224813/exe -> /tmp/systemd-helper
+systemd-helper
+[T1036.003] Cleaning up /tmp/systemd-helper
+[T1036.003] Simulation complete. Log: /home/quintessential/Documents/6841/ass1/project-prism/red/t1036_masquerade/../../logs/raw/t1036_rename_20260701T024143.log
+[T1036] Compiling prctl_spoof.c...
+[T1036] Running prctl_spoof...
+[T1036] Capturing 518 new audit events...
+[T1036] Audit delta saved to: /home/quintessential/Documents/6841/ass1/project-prism/red/t1036_masquerade/../../logs/raw/t1036_audit_delta_20260701T024143.log
+========================================
+[T1036] Simulation complete. End time: Wed Jul  1 02:41:52 AEST 2026
+========================================
