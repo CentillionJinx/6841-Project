@@ -20,7 +20,7 @@ PRISM is a self-contained **Purple Team feedback loop** implementing:
 
 - **Purple Matrix** — a mapping from every offensive action to the kernel telemetry it generates and the detection rule that catches it
 
-The project follows the **Palantir Alerting & Detection Strategy (ADS) Framework** for all detection documentation.
+The project follows the [Palantir Alerting & Detection Strategy (ADS) Framework](https://github.com/palantir/alerting-detection-strategy-framework) for all detection documentation.
 
 ---
 
